@@ -1,6 +1,9 @@
-FROM ubuntu:20.04
+FROM alpine
 
-RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y apache2
+RUN apk update \
+    && apk add lighttpd \
+    && rm -rf /var/cache/apk/*
+COPY ./index.html /var/www/localhost/htdocs
+COPY ./styles.css /var/www/localhost/htdocs
 
-CMD ["apache2ctl","-D","FOREGROUND"]
+CMD ["lighttpd","-D","-f","/etc/lighttpd/lighttpd.conf"]
