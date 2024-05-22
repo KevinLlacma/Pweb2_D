@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora Básica</title>
+<style>
+    .calculadora {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        max-width: 400px;
+        margin: 50px auto;
+    }
+    .pantalla {
+        grid-column: span 4;
+        padding: 20px;
+        font-size: 24px;
+        text-align: right;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .boton {
+        padding: 20px;
+        font-size: 18px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        user-select: none;
+    }
+    .pila-operaciones {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+</style>
+</head>
+<body>
+<div class="calculadora">
+    <input type="text" id="pantalla" class="pantalla" readonly>
+    <div class="boton">7</div>
+    <div class="boton">8</div>
+    <div class="boton">9</div>
+    <div class="boton">/</div>
+    <div class="boton">4</div>
+    <div class="boton">5</div>
+    <div class="boton">6</div>
+    <div class="boton">*</div>
+    <div class="boton">1</div>
+    <div class="boton">2</div>
+    <div class="boton">3</div>
+    <div class="boton">-</div>
+    <div class="boton">0</div>
+    <div class="boton">.</div>
+    <div class="boton">+</div>
+    <div class="boton">=</div>
+    <div class="boton">C</div>
+</div>
+<div id="pila-operaciones" class="pila-operaciones"></div>
+
+<script src="calculadora.js"></script>
+</body>
+</html>

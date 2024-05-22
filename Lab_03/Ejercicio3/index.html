@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Ahorcado</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+    canvas {
+        border: 1px solid #000;
+        margin-top: 20px;
+    }
+    .hidden-word {
+        font-size: 24px;
+        letter-spacing: 10px;
+        margin-top: 20px;
+    }
+    .letter-buttons {
+        margin-top: 20px;
+    }
+    .letter-buttons button {
+        margin: 5px;
+    }
+</style>
+</head>
+<body>
+<h1>Juego de El Ahorcado</h1>
+<canvas id="canvas" width="200" height="200"></canvas>
+<div class="hidden-word" id="hidden-word"></div>
+<div class="letter-buttons" id="letter-buttons"></div>
+
+<script src="ahorcado.js"></script>
+</body>
+</html>

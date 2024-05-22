@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teclado Numérico Aleatorio</title>
+<style>
+    .teclado-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        max-width: 200px;
+        margin: 50px auto;
+    }
+    .tecla {
+        padding: 20px;
+        font-size: 18px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        user-select: none;
+    }
+    .input-display {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div id="teclado-container"></div>
+<input type="text" id="input-display" class="input-display" readonly>
+
+<script src="teclado.js"></script>
+</body>
+</html>
