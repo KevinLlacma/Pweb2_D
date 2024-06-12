@@ -1,0 +1,97 @@
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# Distribution / packaging
+.Python
+env/
+env.bak/
+venv/
+venv.bak/
+ENV/
+ENV.bak/
+env/
+env.bak/
+env/
+env.bak/
+bin/
+obj/
+lib/
+lib64/
+parts/
+sdist/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.whl
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+
+# Django migrations
+**/migrations/*
+
+*.pid
+*.seed
+
+# Environment variables
+.env
+.env.*
+
+# Local settings
+local_settings.py
+
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Virtual Environment
+venv/
+.env/
+*.env
+
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# mypy
+.mypy_cache/
+
+# pylint
+.pylint.d/
+
+# pytest
+.pytest_cache/
+
+# Temporary files
+*.temp
+*.tmp
+*.bak
+*.swp
+*.swo
+*.swn
+*.swa
