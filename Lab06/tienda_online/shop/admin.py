@@ -7,7 +7,7 @@ class TimeAdmin(admin.ModelAdmin):
 # Register ypur models here
 @admin.register(User)
 class UserAdmin(TimeAdmin):
-    list_display = ('first_name', 'last_name', 'email', 'created', 'modified', 'user_modified')
+    list_display = ('username', 'email', 'created', 'modified', 'user_modified')
 
 @admin.register(Category)
 class CategoryAdmin(TimeAdmin):
